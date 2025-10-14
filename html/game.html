@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Very Hard Dodge Game</title>
+<style>
+  body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+    user-select: none;
+  }
+  #game {
+    position: relative;
+    margin: 20px auto;
+    background: #111;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border: 3px solid white;
+  }
+  #player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    bottom: 10px;
+    left: 375px; /* center */
+    border-radius: 5px;
+  
+  }
+  .enemy {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 5px;
+  }
+  #score {
+    margin: 0 auto;
+    width: 800px;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  #gameOver {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    display: none;
+  }
+  #gameOver span {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
+<div id="score">Score: 0</div>
+<div id="game">
+  <div id="player"></div>
+  <div id="gameOver">
+    GAME OVER!<br />
+    Press R to Restart or Q to Quit.
+    <span>(Reload page to quit)</span>
+  </div>
+</div>
+
+<script>
+(() => {
+  const game = document.getElementById("game");
+  const player = document.getElementById("player");
+  const scoreElem = document.getElementById("score");
+  const gameOverElem = document.getElementById("gameOver");
+
+  const gameWidth = 800;
+  const gameHeight = 600;
+  const playerSize = 50;
+  const enemySize = 50;
+
+  let playerX = (gameWidth - playerSize) / 2;
+  const playerSpeed = 15;
+
+  let enemies = [];
+  let enemySpeed = 3;
+  let spawnRate = 1500; // milliseconds
+  let lastSpawn = 0;
+  let score = 0;
+  let gameActive = true;
+
+  let keys = {};
+
+  function createEnemy() {
+    const enemy = document.createElement("div");
+    enemy.classList.add("enemy");
+    enemy.style.left = Math.floor(Math.random() * (gameWidth - enemySize)) + "px";
+    enemy.style.top = "-50px";
+    game.appendChild(enemy);
+    enemies.push({el: enemy, y: -enemySize});
+  }
+
+  function moveEnemies(deltaTime) {
+    enemies.forEach((enemy, index) => {
+      enemy.y += enemySpeed;
+      enemy.el.style.top = enemy.y + "px";
+
+      if (enemy.y > gameHeight) {
+        enemy.el.remove();
+        enemies.splice(index, 1);
+        score++;
+        scoreElem.textContent = "Score: " + score;
+      }
+    });
+  }
+
+  function checkCollision() {
+    for (let enemy of enemies) {
+      const ex = parseFloat(enemy.el.style.left);
+      const ey = enemy.y;
+      const px = playerX;
+      const py = gameHeight - playerSize - 10;
+
+      if (
+        px < ex + enemySize &&
+        px + playerSize > ex &&
+        py < ey + enemySize &&
+        py + playerSize > ey
+      ) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function updatePlayer() {
+    if (keys["ArrowLeft"]) {
+      playerX -= playerSpeed;
+      if (playerX < 0) playerX = 0;
+    }
+    if (keys["ArrowRight"]) {
+      playerX += playerSpeed;
+      if (playerX > gameWidth - playerSize) playerX = gameWidth - playerSize;
+    }
+    player.style.left = playerX + "px";
+  }
+
+  function increaseDifficulty() {
+    if (score > 0 && score % 10 === 0) {
+      enemySpeed += 0.5;
+      if (spawnRate > 500) {
+        spawnRate -= 100;
+      }
+    }
+  }
+
+  let lastTime = performance.now();
+
+  function gameLoop(time) {
+    if (!gameActive) return;
+
+    const deltaTime = time - lastTime;
+    lastTime = time;
+
+    updatePlayer();
+
+    if (time - lastSpawn > spawnRate) {
+      createEnemy();
+      lastSpawn = time;
+    }
+
+    moveEnemies(deltaTime);
+
+    if (checkCollision()) {
+      gameActive = false;
+      gameOverElem.style.display = "block";
+    }
+
+    increaseDifficulty();
+
+    requestAnimationFrame(gameLoop);
+  }
+
+  document.addEventListener("keydown", (e) => {
+    keys[e.key] = true;
+    if (!gameActive) {
+      if (e.key.toLowerCase() === "r") {
+        location.reload();
+      } else if (e.key.toLowerCase() === "q") {
+        alert("Thanks for playing! Reload the page to start again.");
+      }
+    }
+  });
+
+  document.addEventListener("keyup", (e) => {
+    keys[e.key] = false;
+  });
+
+  // Start game loop
+  requestAnimationFrame(gameLoop);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h1>⚔️well come to my calender⚔️</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs">
+    <title>Document</title>
+    <a href="gallery.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvKD_eWHNRRjrYS2lHy0U7J_iBNLvTGxo5yWaoEwPaxYtNCoBEW90Vx7HYMvaHWe8ox5U&usqp=CAU" alt=""></a>
+    <a href="from.html"><img src="https://images.seeklogo.com/logo-png/44/1/css-logo-png_seeklogo-441349.png" alt="" height="200px" width="200px"></a>
+    <style>
+        ul {list-style-type: none;}
+body{
+        background-image: url(https://www.entheosweb.com/wp-content/uploads/2025/04/August-2025-desktop-wallpaper-sunflower-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background:linear-gradient(red,orange,yellow,lightgreen,aqua,violet,pink);
+  text-align: center;
+}
+
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color:rgb(255, 0, 0);
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+}
+
+p{
+    color: greenyellow;
+    font-size: x-large;
+}
+h1{
+  color: aqua;
+  text-align: center;
+  justify-content: center;
+  font-size: xx-large ;
+}
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background: black;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: gold;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.days {
+  padding: 10px 0;
+  background:linear-gradient(red,orange,yellow);
+  color: white;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color:rgb(0, 0, 0);
+}
+ul{
+    color: rgb(0, 0, 0);
+background: linear-gradient(red,orange,yellow,lightgreen,aqua,pink);
+
+}
+
+.days li .active {
+  padding: 5px;
+  background:aqua;
+  color: gold; 
+}
+button{
+    background-color: black;
+    color: gold;
+    font-size: large;
+   flex-direction: row;
+   border: rgb(177, 0, 0);
+   box-shadow: 30px;
+}
+.btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn:hover, .dropdown:hover .btn {
+  background:linear-gradient(red,orange,yellow);
+}
+
+.btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn:hover, .dropdown:hover .btn {
+  background-color: #0b7dda;
+}
+    </style>
+    <iframe src="https://kids.nationalgeographic.com/" frameborder="0" height="100%" width="100%"></iframe>
+</head>
+<body>
+    <div class="main-container"></div>
+    <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>📆Augst📆<br><span style="font-size:23px">📆2025📆</span></li>
+        </ul>
+      </div>
+      <ul class="weekdays">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+      </ul>
+      
+      <ul class="days">
+       <li>1</li>
+       <li><span class="active">2</span></li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+      </ul>
+      <p>Raksha bandhan</p>
+    <a href="https://subkuz.com/uploads/news/2025/07/sub17522326716110.webp"><button>paksha bandhan</button></a>
+    <p> Independence Day</p>
+    <a href="https://higssoftware.com/blog/images/happy-independence-day.png"><button>Independence Day</button></a>
+    <p>janmastami</p>
+    <a href="https://www.namoastro.com/blog/wp-content/uploads/2024/08/Shri-Krishna-Janmashtami-.jpg"><button>janmastami</button></a>
+    <p>ganesh chaturthi</p>
+    <a href="https://images.indianexpress.com/2024/09/ganesh-chaturthi-1200_20240918072101.jpg?w=640"><button>ganesh chaturthi</button></a>
+    <p>onam</p>
+    <a href="https://dhwaniastro.com/public/cms-images/blog-images/635224160_onam-history-16615028823x2.jpg"> <button>onam</button></a>
+      <p>Nuakhai</p>
+      <a href="https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2021/09/14063949/Happy-NuaKhai.jpg"><button>Nuakhai</button></a>
+      <p>friendship day</p>
+      <a href="https://assets.thehansindia.com/h-upload/2025/07/31/1572173-friendship-day-2025.webp"><button>friendship day</button></a>
+      <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button class="btn">Button</button>
+<div class="dropdown">
+  <button class="btn" style="border-left:1px solid navy">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="https://luckyfullstackdeveloper1.github.io/LuckyFullStackDeveloper1/main.html">Link 1</a>
+    <a href="https://luckyfullstackdeveloper1.github.io/LuckyFullStackDeveloper1/kbc.html">Link 2</a>
+    <a href="">Link 3</a>
+  </div>
+</div>
+<iframe src="http://enjoyprograming.com/" frameborder="0" height="100%" width="100%"></iframe>
+<a href="gallery.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwPGZ7fuBQp-saqX3G6Pxc-x9Y6qPm-s-9w&s" alt="" height="200px" width="200px"></a>
+<a href="from.html"><img src="https://www.iconarchive.com/download/i60791/graphics-vibe/developer/css-3.ico" alt="" height="200px" width="200px"></a>
+</body>
+</html>
