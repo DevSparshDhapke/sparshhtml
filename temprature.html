@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{   
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://img.freepik.com/premium-photo/abstract-red-fire-versus-blue-ice-background-heat-cold-concept_1071931-38606.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        fieldset {
+            width: 500px;
+            box-shadow: 2px 2px 2px 2px aqua;
+            border-radius: 28px;
+
+        }
+
+        button{
+            border-radius: 20px;
+            height: 30px;
+            width: 90px;
+            background-color:aqua;
+            font-size: large;
+            font-family: cursive;
+        }
+
+
+        p {
+            color: aqua;
+            font-size: xx-large;
+            font-family: cursive;
+            text-align: center;
+        }
+
+
+
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 255, 0);
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h1>temprature cheaker</h1>
+        <p id="display"></p>
+        <input type="number" id="temperature" placeholder="Enter temperature">
+        <button onclick="temprature()">cheak</button>
+
+        <script>
+            function temprature() {
+                let temperature = Number(document.getElementById("temperature").value);
+
+                if (temperature <= 0) {
+                    document.getElementById("display").innerHTML = "very cold";
+                }
+                else if (temperature <= 20) {
+                    document.getElementById("display").innerHTML = " cold";
+                    
+                }
+                else if (temperature <= 30) {
+                    document.getElementById("display").innerHTML = "warm";
+                    
+                }
+                else if (temperature <= 40) {
+                    document.getElementById("display").innerHTML = "hot";
+                    
+                }
+                else if (temperature <= 60) {
+                    document.getElementById("display").innerHTML = "very hot ";
+                    
+                }
+                else if (temperature <= 100) {
+                    document.getElementById("display").innerHTML = "boiling";
+                   
+
+                }
+                else {
+                    document.getElementById("display").innerHTML = "supercritical";
+            
+                }
+            }
+           
+        </script>
+    </fieldset>
+</body>
+
+</html>
