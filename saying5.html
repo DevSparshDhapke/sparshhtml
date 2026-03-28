@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>from tag in html</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/030/678/881/large_2x/red-background-high-quality-free-photo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .project:hover {
+            transform: scale(1.080);
+            box-shadow: 20px 8px 20px aqua;
+        }
+
+        .project {
+            background-color: #0073ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            flex-direction: row;
+        }
+        button{
+            border-radius: 20px;
+            height: 30px;
+            width: 90px;
+            background-color:aqua;
+            font-size: large;
+            font-family: cursive;
+        }   
+        p{
+            font-size: xx-large;
+        }
+    </style>
+
+    <section class="project">
+       
+        <h2>select country to know how people say hello</h2>
+         <p id="display"></p>
+        <label>Country:</label>
+        
+        <select id="country">
+            <option>Select your country</option>
+            <option value="india">INDIA</option>
+            <option>USA</option>
+            <option>china</option>
+            <option>Uganda</option>
+            <option>Russia</option>
+            </select>
+            <br>
+            <br><br>
+           <button onclick="country()">cheak</button>
+    </section>
+     
+</body>
+<script>
+    function country() {
+        let country = document.getElementById("country").value;
+        if (country == "india") {    
+            document.getElementById("display").innerHTML = country +" nameste";
+        }
+        else if(country == "USA"){
+             document.getElementById("display").innerHTML = country +" hello";
+        }
+          else if(country == "china"){
+             document.getElementById("display").innerHTML = country +" knee how";
+        }
+         else if(country == "Uganda"){
+             document.getElementById("display").innerHTML = country +"Oli otya";
+        }
+    }
+</script>
+
+</html>
