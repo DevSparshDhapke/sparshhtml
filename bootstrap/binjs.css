@@ -1,0 +1,14 @@
+.cover-container{
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url(https://www.timeoutdoha.com/cloud/timeoutdoha/2025/06/15/Tapasake-4-1024x768-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    height: 50%;
+    width: 50%;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+              background-image: url(https://www.shutterstock.com/image-illustration/simple-interest-conceptsimple-calculated-only-260nw-2688238791.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20250814/pngtree-1-image_17866526.webp);
+           background-size: cover;
+           background-repeat: no-repeat;
+        }
+        fieldset{
+              height:60px;
+            width:400px ;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 1px solid rgb(202, 202, 202);
+        }
+        .main {
+            height: 65vh;
+            width: 35vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 1px solid rgb(202, 202, 202);
+             background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230523/pngtree-white-connected-network-and-dots-stock-photo-image_2604746.jpg);
+           background-size: cover;
+           background-repeat: no-repeat;
+
+        }
+
+        input {
+            height: 27px;
+            width: 90%;
+        }
+
+        h1 {
+            color: black;
+        }
+
+
+        button {
+            height: 45px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(255, 238, 0);
+            font-size: 20px;
+            font-size: larger;
+            color: rgb(0, 0, 0);
+        }
+
+        label {
+            font-size: 19px;
+            margin-right: 65%;
+            color: rgb(0, 0, 0);
+        }
+
+        b {
+            color: rgb(255, 247, 0);
+            font-size: 40px;
+        }
+       
+        p{
+            color: rgb(0, 0, 0);
+            
+            font-size: large;
+        }
+       
+    
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main">
+           <h1>simple intrest Calculator</h1>
+            <br>
+            <label>P (PRINCIPAL) :</label><br>
+            <input type="number" id="input" placeholder="PRINCIPAL"><br>
+            <label>R (rate) :</label><br>
+            <input type="number" id="input-one" placeholder="rate"><br>
+            <label> T (TIME) :</label><br>
+            <input type="number" id="input-two" placeholder="TIME"><br>
+            <button class="mini-box-2" onclick="simpleintrest()"> Calculate simple intrest</button>
+            
+
+             
+              <fieldset>
+            <p>The simple intresrt of <b id="principal"></b> , <b id="rate"></b> , and <b id="TIME"></b> is =<b id="last"></b>
+                
+            </p>
+            </fieldset>
+          </div>
+        </div>
+
+</body>
+
+<script>
+    function simpleintrest() {
+        let x = Number(document.getElementById("input").value);
+        let y = Number(document.getElementById("input-one").value);
+        let z = Number(document.getElementById("input-two").value);
+
+        let a = x * y * z;
+
+        document.getElementById("principal").innerHTML = x;
+        document.getElementById("rate").innerHTML = y;
+        document.getElementById("TIME").innerHTML = z;
+        document.getElementById("last").innerHTML = a / 100;
+    }
+    
+</script>
+
+</html>
