@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charse t="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- css link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+
+    <!-- js link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <style>
+
+        .coveer {
+            background-image: url(https://media.gettyimages.com/id/1199024449/photo/burj-khalifa-with-dubai-fountain-shopping-mall-and-hotels-in-dubai.jpg?s=1024x1024&w=gi&k=20&c=ZUQFRkWcauBOvEi6ircU470dIcHT8EIvc0QRFGUF0Xs=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .l {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        .p {
+
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        .project {
+            background-color: #007979;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            height: 390px;
+            width: 400px;
+        }
+
+
+        .a {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        button {
+            height: 50px;
+            font-size: larger;
+            width: 200px;
+            background-color: aqua;
+            border-radius: 40px;
+        }
+
+
+        .s {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        .sections {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        .k {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+
+        h1 {
+            font-size: larger;
+
+        }
+
+
+        .project:hover {
+            transform: scale(1.09);
+
+        }
+
+
+        .project img {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- header start -->
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a
+                    href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> <svg
+                        class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"> <input type="search"
+                        class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+                <div class="text-end"> <button type="button" class="btn btn-outline-light me-2">Login</button> <button
+                        type="button" class="btn btn-warning">Sign-up</button> </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+    <!-- carosel start -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators"> <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+                class="active" aria-label="Slide 1" aria-current="true"></button> <button type="button"
+                data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button> <button
+                type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <img
+                    src="https://www.shutterstock.com/image-vector/game-zone-3d-editable-text-260nw-2287862245.jpg" alt=""
+                    height="700px" width="100%">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p class="opacity-75">Some representative placeholder content for the first slide of the
+                            carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> <img
+                    src="https://hopupindia.com/jaipur/wp-content/uploads/2025/09/imgi_63_AC9h4nq-iGPkizcA0hOdzNoWfiIKvPZWgXf3tv8rOV0A5PXwdmvDs4mMJB-hTLTgOiINjDbWb_khWS2OP2EJ_ypTBM4oo_BDJ-KFKhQ2VApyUGt3az2ke9uY0-yoTAxwt5Z-aSxicm3wlAs1360-w1360-h1020-rw-1024x759.jpeg"
+                    alt="" height="700px" width="100%">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> <img
+                    src="https://thumbs.dreamstime.com/b/interior-game-zone-shenzhen-china-may-coco-park-shopping-center-coco-park-longgang-district-popular-shopping-dining-95873819.jpg"
+                    alt="" height="700px" width="100%">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div> <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-con
+            trol-prev-icon" aria-hidden="true"></span> <span
+                class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button"
+            data-bs-target="#myCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon"
+                aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+    </div>
+
+    <!-- carosel end -->
+
+
+    <br><br><br><br>
+
+
+    <!-- carosel2 start -->
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading.
+                <span class="text-body-secondary">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+                here.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2FM%2F8fbf8cf4-996e-4c5f-9388-f14f0406d3bd/watermark:F/width:800?csig=AAAAAAAAAAAAAAAAAAAAAPzSIZEZjniepzORVvwtCOAlYSzCvl7ZUZja5G_sV6Hx&exp=1780422477&osig=AAAAAAAAAAAAAAAAAAAAABplNJkd7361Q6eCYRZRIyeibcBp_jrdnJouq5g4V-1Q&signer=media-rpc&x-canva-quality=screen"
+                alt="" width="400px" height="400px">
+        </div>
+    </div>
+    <!-- carosel2 end -->
+
+    <!-- switch start -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"> <button
+            class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)"> <svg
+                class="bi my-1 theme-icon-active" aria-hidden="true">
+                <use href="#sun-fill"></use>
+            </svg> <span class="visually-hidden" id="bd-theme-text">Toggle theme</span> </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li> <button type="button" class="dropdown-item d-flex align-items-center active"
+                    data-bs-theme-value="light" aria-pressed="true"> <svg class="bi me-2 opacity-50" aria-hidden="true">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" aria-hidden="true">
+                        <use href="#check2"></use>
+                    </svg> </button> </li>
+            <li> <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false"> <svg class="bi me-2 opacity-50" aria-hidden="true">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" aria-hidden="true">
+                        <use href="#check2"></use>
+                    </svg> </button> </li>
+
+            <li> <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                    aria-pressed="false"> <svg class="bi me-2 opacity-50" aria-hidden="true">
+                        <use href="#circle-half"></use>
+                    </svg>
+
+
+                    Auto
+
+
+
+
+
+
+
+                    <svg class="bi ms-auto d-none" aria-hidden="true">
+                        <use href="#check2"></use>
+                    </svg> </button> </li>
+        </ul>
+    </div>
+
+    <!-- switch end -->
+
+    <!-- cover start -->
+    <div class="coveer">
+
+        <main class="px-3">
+            <h1>Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. <br>Download,
+                edit
+                the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead"> <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
+            </p>
+    </div>
+
+    </main>
+    <!-- cover end -->
+
+
+    <!-- reponsive start -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6"> <img
+                    src="https://cdn.swisswatchglobal.com/wp-content/uploads/2024/08/ROLEX_Showroom_1536x713_Desktop.jpg"
+                    height="500px" loading="lazy"> </div>
+
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image
+                </h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                    world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
+                    responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button"
+                        class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> <button type="button"
+                        class="btn btn-outline-secondary btn-lg px-4">Default</button> </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- responsive end -->
+
+
+    <!-- game zone start -->
+
+    <div class="ssss">
+        <div class="sections">
+
+
+            </a>
+            </section>
+
+            <section class="project">
+                <img src="https://raipur.rebounce.in/wp-content/uploads/2023/07/cricket-simulator.jpg" alt="">
+                <a href="https://raipur.rebounce.in/cricket-simulator/">
+                    <button>order now</button>
+                </a>
+
+            </section>
+
+            <section class="project">
+                <img src="https://www.shutterstock.com/image-photo/pont-de-larche-france-07-600nw-2496438951.jpg"
+                    alt="">
+                <a href="https://www.shutterstock.com/search/bumpers-car">
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://scssports.in/cdn/shop/files/2_392f2c43-c0ac-49af-bf45-3ef21b6acf50.png?v=1745409191&width=1080">
+                <a href="https://scssports.in/products/scs-black-air-hockey-table?srsltid=AfmBOoqZHBZxz8tcos_NgE2egr2iAcYdrseLq198aifz3i6bxg9M6FcL">
+                    <h1></h1>
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBqnfOtYI5SzxgvfAGTz3RI7Iufp1jkvUJ7Q&s" alt="">
+
+                <a href="https://www.homefrontmag.com/diy-glowing-ring-toss/">
+                    <h1></h1>
+                    <button>order now</button>
+                </a>
+
+            </section>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="k">
+
+            <section class="project">
+                <img src="https://play-lh.googleusercontent.com/drOLW0k5W2C8NZhPHL2Qx6EpW00gjXV2qN5oXL5ogsXG8l-GCWofvUrKem3NfXMsgQ">
+                <a href="https://play.google.com/store/apps/details?id=vn.tmthua.spinthewheel">
+
+                    <button>order now</button>
+                </a>
+            </section>
+            <section class="project">
+                <img src="https://5.imimg.com/data5/ECOM/Default/2024/7/439137068/BF/VU/AK/141264671/h9b5a4e47bd5d4db4a7fce900e5194489f-500x500.webp" alt="">
+                <a href="https://www.indiamart.com/proddetail/100balls-acrylic-lucky-online-lotto-game-ball-lottery-drawing-machine-2855221800697.html?srsltid=AfmBOoqJ1gBTIuM8xBVf8FvfL5c-6QlKhnhpaFGM1l_gbtHj3n6Ng_6w">
+
+                    <button>order now</button>
+                </a>
+            </section>
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRAuSMeaVeBOUh4nmoxwIFuirkV48QbbafqA&s"
+                    alt="">
+                <a href="https://www.elaut.com/games/claw-machines">
+
+                    <button>order now</button>
+                </a>
+            </section>
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQBQDkl9ylrnjkzHuokp02IZsmCTfVMPEMg&s"
+                    alt="">
+                <a href="https://actionevents.com/product/extreme-shot-basketball-lane/">
+                    <button>order now</button>
+
+                </a>
+
+            </section>
+
+
+        </div>
+
+        <br>
+
+        <div class="p">
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9qCCgTahKl6vcvMITSwIyz-7gIEqhzDlZQ&s" alt="">
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9qCCgTahKl6vcvMITSwIyz-7gIEqhzDlZQ&s">
+
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://m.media-amazon.com/images/I/81NQwwndQNL.png"
+                    alt="">
+                <a href="https://www.amazon.com/zafar-khan-Table-Tennis-World/dp/B0DD2J8KRB">
+
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://www.bonziniusa.com/cdn/shop/articles/BonziniUSA-334538-Foosball-Table-Figurines-BlogBanner1.jpg?v=1728670624"
+                    alt="">
+                <a href="https://www.bonziniusa.com/blogs/news/what-are-the-benefits-of-playing-foosball">
+
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://golfbays.co.uk/cdn/shop/files/WhatsApp_Image_2025-02-24_at_14.04.41_d12c74af.jpg?v=1746186611" alt="">
+                <a
+                    href="http://golfbays.co.uk/pages/golf-simulator-guide">
+
+                    <button>order now</button>
+                </a>
+
+            </section>
+
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="s">
+            <section class="project">
+                <img src="https://nwscdn.com/media/catalog/product/cache/h900xw900/p/i/pinpoint-dartboard-world-series-1.jpg" alt="">
+                <a href="https://www.networldsports.in/pinpoint-professional-dartboard-world-series?srsltid=AfmBOorBgTsXvj61yziFHdxbBxJhrri96ue2h71iRr7eoYNebUJuC1ND">
+
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://bookextraordinary.com/wp-content/uploads/2025/10/hammer_strength_carnival_game_rental.webp"
+                    alt="">
+                <a
+                    href="https://bookextraordinary.com/game-rentals/hammer-arcade-game/">
+                    <button>order now</button>
+                </a>
+            </section>
+
+
+            <section class="project">
+                <img src="https://icherya.github.io/Fifteen-Puzzle/img/300px-15-puzzle.jpg" alt="">
+                <a
+                    href="https://icherya.github.io/Fifteen-Puzzle/">
+
+                    <button>order now</button>
+                </a>
+            </section>
+
+            <section class="project">
+                <img src="https://m.media-amazon.com/images/I/71P8Clf0jtL._AC_UF894,1000_QL80_.jpg"
+                    alt="">
+                <a href="https://www.amazon.in/ZOOMELLA-Balance-Challenge-Strategy-Player/dp/B0FY6NCK6H">
+
+                    <button>order now</button>
+                </a>
+            </section>
+
+
+        </div>
+        ]
+        <br><br>
+
+        <div class="l">
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwh7jMqXLSfMv5WQS-UALBEOWkFscHolngxw&s"
+                    alt="">
+               
+
+                    <button>order now</button>
+              
+            </section>
+
+            <section class="project">
+                <img src="https://cdn11.bigcommerce.com/s-2684pxp0db/product_images/uploaded_images/screenshot-2026-01-08-at-10.33.32-pm.png"
+                    alt="">
+                <a href="https://www.sawyertwain.com/blog/what-is-shuffleboard-rules-how-to-play-a-complete-guide/?srsltid=AfmBOopNf_o0Wnk4LFa1wxrQSKM3ZcB3RHz_N_rNm_9DyuLczF-30Ogb">
+
+                    <button>order now</button>
+                </a>
+            </section>
+            <section class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-3jq8w5oVkyBbmy1zoIzEapiLciGmsMu9Q&s" alt="">
+                <a href="https://www.amazon.in/Rope-Ring-Toss-Hey-Play/dp/B06WGSLG59">
+
+                    <button>order now</button>
+                </a>
+            </section>
+            <section class="project">
+                <img src="https://tse-mm.bing.com/th?q=A%20Bean%20Bag%20Toss%20Game%20apk"
+                    alt="">
+                <a href="https://scdrc.ap.nic.in/mobile-a-bean-bag-toss-game-rules-scoring-and-winning-conditions.html">
+                    <button>order now</button>
+                </a>
+            </section>
+
+        </div>
+        <br><br>
+        <!-- game zone end -->
+
+
+        <!-- footer start -->
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+             <button
+                class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+                aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)"> <svg
+                    class="bi my-1 theme-icon-active" aria-hidden="true">
+                    <use href="#circle-half"></use>
+
+                </svg> <span class="visually-hidden" id="bd-theme-text">Toggle theme</span> </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+                <li> <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                        aria-pressed="false"> <svg class="bi me-2 opacity-50" aria-hidden="true">
+                            <use href="#sun-fill"></use>
+                        </svg>
+                        Light
+                        <svg class="bi ms-auto d-none" aria-hidden="true">
+                            <use href="#check2"></use>
+                        </svg> </button> </li>
+                <li> <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                        aria-pressed="false"> <svg class="bi me-2 opacity-50" aria-hidden="true">
+                            <use href="#moon-stars-fill"></use>
+                        </svg>
+                        Dark
+                        <svg class="bi ms-auto d-none" aria-hidden="true">
+                            <use href="#check2"></use>
+                        </svg> </button> </li>
+                <li> <button type="button" class="dropdown-item d-flex align-items-center active"
+                        data-bs-theme-value="auto" aria-pressed="true"> <svg class="bi me-2 opacity-50"
+                            aria-hidden="true">
+                            <use href="#circle-half"></use>
+
+                        </svg>
+                        Auto
+                        <svg class="bi ms-auto d-none" aria-hidden="true">
+                            <use href="#check2"></use>
+                        </svg> </button> </li>
+                        
+            </ul>
+
+        </div>
+
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                <div class="col mb-3"> <a href="/"
+                        class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+                        aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg> </a>
+                    <p class="text-body-secondary">© 2025</p>
+                </div>
+
+                <div class="col mb-3"></div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+
+                    </ul>
+
+                </div>
+
+            </footer>
+        </div>
+        <footer class="py-5">
+
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                type="button">Subscribe</button> </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!--  game zone end -->
+        </body>
+        </html>
