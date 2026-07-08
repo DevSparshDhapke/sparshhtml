@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+             
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       
+        }
+  
+        .main {
+            height: 466px;
+            width: 500px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.211);
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 1px solid rgb(202, 202, 202);
+             
+
+        }
+
+        input {
+            height: 27px;
+            width: 50%;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+
+        button {
+            height: 45px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(255, 238, 0);
+            font-size: 20px;
+            font-size: larger;
+            color: rgb(0, 0, 0);
+        }
+
+        label {
+            font-size: 19px;
+            margin-right: 65%;
+            color: rgb(0, 0, 0);
+        }
+
+        b {
+            color: rgb(255, 247, 0);
+            font-size: 40px;
+        }
+       
+        p{
+            color: rgb(255, 255, 255);
+            
+            font-size: large;
+        }
+       
+        .dd{
+            height: 100px;
+            width: 350px;
+            background-color: black;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main">
+           <h1> profit-loss Calculator</h1>
+            <br>
+            <div class="dd">
+                <p id="display"></p>
+                
+            </div>
+            <br>
+            <label>cp  :</label><br>
+            <input type="number" id="input" placeholder="cp"><br>
+            <label>sp :</label><br>
+            <input type="number" id="input-one" placeholder="sp"><br>
+            <label>product name :</label>
+             <input type="text" id="input-twp" placeholder="product name"><br>
+            <button onclick="Profit()"> Calculate  profit-loss</button>
+            
+
+             
+          </div>
+        </div>
+
+</body>
+
+<script>
+   
+   function Profit() {
+    let cp = Number (document.getElementById ("input").value);
+    let sp =  Number (document.getElementById ("input-one").value);
+   
+
+    if (sp>cp) {
+        document.getElementById("display").innerHTML="you have profit in this product";
+    }
+
+    else if (cp>sp){
+         document.getElementById("display").innerHTML=" you have loss in this product";
+    }
+  
+   }
+    
+</script>
+
+</html>
